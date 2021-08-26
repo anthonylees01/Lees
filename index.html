@@ -7,47 +7,90 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/lees.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
+<script>
+$(function() (
+	$("#header").load("site-assets/header.html");
+	$("#footer").load("site-assets/footer.html");
+));
+</script>
+
 <body>
 	<!--header element -->
 	<header>
-		<h1>Lees.education</h1>
-		<h4>Anthony Lees' hub for sharing resources, courses, news and project opportunities.</h2>
-		<img src="site-images/anthony01-small.jpg">
+
 	</header>
+
+	<!--main menu -->
+	<nav>
+		<a href="index.html" class="logo"><h1>Lees.education</h1></a>
+		<ul>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="resources.html">Resources</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+	</nav>
+
+<div> id="header"></div>
 
 	<!-- main element -->
 	<main>
-		<h2>About</h2>
-		<p>Anthony Lees is a ...</p>
-		<p><a href="about.html">Find out more about Anthony</a></p>
-		<p></p>
-		<!-- this should lead to the resources page -->
-		<h2>Resources</h2>
-		<p>Here you will find a range of resources associated with any events or projects that I have made available ...</p>
+
+		<h4>Anthony Lees' hub for sharing resources, courses, news and project opportunities.</h4>
+
+		<div class="box1">
+			<img src="site-images/anthony01-small.jpg" width= "150px" align="right">
+			<h2>About</h2>
+			<p>Anthony is a Deputy Head and SLE as part of the Cornerstone Academy Trust, and leads (and trains) on EdTech as part of the Teaching School, NCCE Computing Hub, Microsoft Training Academy and DfE Demonstrator School programmes.</p>
+			<a class="button1" href="about.html">Biography and Further Information</a>
+		</div>
+
 		<p></p>
 
-
-		<h2>Projects</h2>
-		<p>Click on the links below to go direct to each of these key projects:</p>
-		<ul>
-			<li><a target="_blank" href="http://www.edtech-music.com">EdTech Music</a></li>
-			<li><a target="_blank" href="http://www.dormantstories.com">Dormant Stories</a></li>
-			<li>Courses</li>
-		</ul>
+		<div class="box1">
+			<h2>Resources</h2>
+			<p>Here you will find a range of resources associated with any events or projects that I have made available ...</p>
+		</div>
+		
 		<p></p>
 
-		<h2>Courses</h2>
-		<p>I have a number of courses available in various office and productivity categories. They can be purchased outright at Udemy or as part of a monthly subscription at SkillShare.</p>
-		<p>Click here for the current full catalogue.</p>
+		<div class="box1">
+			<h2>Projects</h2>
+			<p>Click on the links below to go direct to each of these key projects:</p>
+			<ul>
+				<li><a target="_blank" href="http://www.edtech-music.com">EdTech Music</a></li>
+				<li><a target="_blank" href="http://www.dormantstories.com">Dormant Stories</a></li>
+				<li>Courses</li>
+			</ul>
+		</div>
+
 		<p></p>
 
-		<h2>Contact</h2>
-		<p>You can contact me directly from these links, or subscribe to various social and email options.</p>
-		<p>Click here for contact and subscription options</p>
+		<div class="box1">
+			<h2>Courses</h2>
+			<p>I have a number of courses available in various office and productivity categories. They can be purchased outright at Udemy or as part of a monthly subscription at SkillShare.</p>
+			<p>Click here for the current full catalogue.</p>
+		</div>
+
 		<p></p>
+
+		<div class="box1">
+			<h2>Contact</h2>
+			<p>You can contact me directly from these links, or subscribe to various social and email options.</p>
+			<p>Click here for contact and subscription options</p>
+		</div>
+
+		<p></p>
+
 	</main>
+
+<div> id="footer"></div>
 
 	<!-- footer element -->
 	<footer>This site is &copy; Anthony Lees 2021</footer>
